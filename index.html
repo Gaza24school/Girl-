@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لوحة الألوان البناتية</title>
+  <title>لوحة البنات التفاعلية</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>لوحة الألوان البناتية</h1>
-    <p>ابدئي الرسم واستمتعي بالألوان!</p>
+    <h1>لوحة البنات التفاعلية</h1>
+    <p>ابدئي بالرسم واستمتعي بالإبداع بلا حدود!</p>
   </header>
 
   <main>
     <section class="drawing-section">
       <canvas id="drawing-canvas"></canvas>
       <div class="tools">
-        <label for="color-picker">اختاري لونكِ:</label>
-        <input type="color" id="color-picker" value="#ff69b4">
-        
-        <label for="brush-size">حجم الفرشاة:</label>
-        <input type="range" id="brush-size" min="1" max="20" value="5">
-
-        <button id="clear-canvas">مسح اللوحة</button>
+        <div class="tool">
+          <label for="color-picker">اختاري لونكِ:</label>
+          <input type="color" id="color-picker" value="#ff69b4">
+        </div>
+        <div class="tool">
+          <label for="brush-size">حجم الفرشاة:</label>
+          <input type="range" id="brush-size" min="1" max="50" value="10">
+        </div>
+        <button class="tool-button" id="clear-canvas">مسح اللوحة</button>
+        <button class="tool-button" id="save-canvas">حفظ الرسم</button>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 - لوحة الألوان البناتية</p>
+    <p>&copy; 2024 - لوحة البنات التفاعلية</p>
   </footer>
 
   <script src="script.js"></script>
